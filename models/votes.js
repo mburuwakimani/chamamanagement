@@ -8,6 +8,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Votes.associate = function(models) {
     // associations can be defined here
+    Votes.belongsTo(models.Chama)
   };
   return Votes;
 };

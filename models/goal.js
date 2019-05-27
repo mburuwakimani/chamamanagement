@@ -7,6 +7,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Goal.associate = function(models) {
     // associations can be defined here
+    Goal.belongsTo(models.Chama)
   };
   return Goal;
 };

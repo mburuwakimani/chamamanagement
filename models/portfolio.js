@@ -12,6 +12,7 @@ module.exports = (sequelize, DataTypes) => {
   }, {});
   Portfolio.associate = function(models) {
     // associations can be defined here
+    Portfolio.belongsTo(models.Chama)
   };
   return Portfolio;
 };
